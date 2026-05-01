@@ -15,4 +15,4 @@ The file requirements.txt helps a smooth installation of Open Interpreter with P
 
 **The key to success is actually pip install setuptools<80**
 
-For pyhton 3.11 pip install setuptools==80 has been tested; 3.10, ==60.
+For pyhton 3.11 pip install setuptools==80 has been tested; 3.10, ==70.
