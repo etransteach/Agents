@@ -1,7 +1,7 @@
 # Agents
 
 # Warning
-Open Interpreter cuts code short especially the parenthesis/bracket at the end of code, to avoid this, tell your model to:
+Open Interpreter cuts code short especially the parenthesis/bracket at the end of code. To avoid this, tell your model to:
 # "Add a comment at the end of the code, e.g., # End of code"
 
 
@@ -22,4 +22,4 @@ The file requirements.txt helps a smooth installation of Open Interpreter with P
 
 For pyhton 3.11 pip install setuptools==80 has been tested; 3.10, ==70.
 
-For python 3.13 and 3.14 open interpreter installation fail, I uploaded the log. 
+For python 3.13 and 3.14 open interpreter installations fail, I uploaded the log. 
