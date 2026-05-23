@@ -1,0 +1,91 @@
+uv pip install setuptools==80
+Using Python 3.14.4 environment at: .py314
+Resolved 1 package in 936ms
+░░░░░░░░░░░░░░░░░░░░ [0/1] Installing wheels...                                 warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 913ms
+ + setuptools==80.0.0
+(.py314) avril@avril-Lenovo-G505:/media/avril/nada/App$ uv pip install open-interpreter
+Using Python 3.14.4 environment at: .py314
+Resolved 144 packages in 6.42s
+  × Failed to build `tiktoken==0.7.0`
+  ├─▶ The build backend returned an error
+  ╰─▶ Call to `setuptools.build_meta.build_wheel` failed (exit status: 1)
+
+      [stdout]
+      running bdist_wheel
+      running build
+      running build_py
+      copying tiktoken/load.py -> build/lib.linux-x86_64-cpython-314/tiktoken
+      copying tiktoken/_educational.py ->
+      build/lib.linux-x86_64-cpython-314/tiktoken
+      copying tiktoken/__init__.py ->
+      build/lib.linux-x86_64-cpython-314/tiktoken
+      copying tiktoken/core.py -> build/lib.linux-x86_64-cpython-314/tiktoken
+      copying tiktoken/model.py -> build/lib.linux-x86_64-cpython-314/tiktoken
+      copying tiktoken/registry.py ->
+      build/lib.linux-x86_64-cpython-314/tiktoken
+      copying tiktoken_ext/openai_public.py ->
+      build/lib.linux-x86_64-cpython-314/tiktoken_ext
+      running egg_info
+      writing tiktoken.egg-info/PKG-INFO
+      writing dependency_links to tiktoken.egg-info/dependency_links.txt
+      writing requirements to tiktoken.egg-info/requires.txt
+      writing top-level names to tiktoken.egg-info/top_level.txt
+      reading manifest file 'tiktoken.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE'
+      writing manifest file 'tiktoken.egg-info/SOURCES.txt'
+      copying tiktoken/py.typed -> build/lib.linux-x86_64-cpython-314/tiktoken
+      running build_ext
+      running build_rust
+
+      [stderr]
+      /home/a/.cache/uv/builds-v0/.tmpNPZTiL/lib/python3.14/site-packages/setuptools/config/_apply_pyprojecttoml.py:82:
+      SetuptoolsDeprecationWarning: `project.license` as a TOML table is
+      deprecated
+      !!
+
+      
+      ********************************************************************************
+              Please use a simple string containing a SPDX expression for
+      `project.license`. You can also use `project.license-files`. (Both
+      options available on setuptools>=77.0.0).
+
+              By 2027-Feb-18, you need to update your project and remove
+      deprecated calls
+              or your builds will no longer be supported.
+
+              See
+      https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license
+      for details.
+      
+      ********************************************************************************
+
+      !!
+        corresp(dist, value, root_dir)
+      warning: no files found matching 'Makefile'
+      error: can't find Rust compiler
+
+      If you are using an outdated pip version, it is possible a prebuilt
+      wheel is available for this package but pip is not able to install from
+      it. Installing from the wheel would avoid the need for a Rust compiler.
+
+      To update pip, run:
+
+          pip install --upgrade pip
+
+      and then retry package installation.
+
+      If you did intend to build this package from source, try installing
+      a Rust compiler from your system package manager and ensure it is
+      on the PATH during installation. Alternatively, rustup (available at
+      https://rustup.rs) is the recommended way to download and update the
+      Rust compiler toolchain.
+
+      hint: This usually indicates a problem with the package or the build
+      environment.
+  help: `tiktoken` (v0.7.0) was included because `open-interpreter` (v0.4.3)
+        depends on `tiktoken`
+
