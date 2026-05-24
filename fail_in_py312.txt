@@ -1,0 +1,7 @@
+uv pip install opem-interpreter
+Using Python 3.12.13 environment at: .py312
+  × No solution found when resolving dependencies:
+  ╰─▶ Because opem-interpreter was not found in the package registry and you
+      require opem-interpreter, we can conclude that your requirements are
+      unsatisfiable.
+
