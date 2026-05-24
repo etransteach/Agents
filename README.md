@@ -22,4 +22,4 @@ The file requirements.txt helps a smooth installation of Open Interpreter with P
 
 For pyhton 3.11 pip install setuptools==80 has been tested; 3.10, ==70.
 
-For python 3.12, 3.13 and 3.14 open interpreter installations fail, I uploaded the log. 
+For python 3.12, 3.13 and 3.14 open interpreter installations fail, I uploaded the logs. 
